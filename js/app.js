@@ -175,35 +175,52 @@
 // 20
 {
   var c = "itclub";
+  var b = "lub";
+  var processed = c.substr(2,5); // correct this!
+  
+  check(c, 'itclub');
+  isEqual(processed, b);
+}
+// 21
+{
+  var c = "itclub";
+  var processed = c.split(); // correct this!
+  
+  check(c, 'itclub');
+  isEqual(processed, "i-t-c-l-u-b");
+}
+// 22
+{
+  var c = "itclub";
   var processed = []; // correct this! use split function of string
   
   check(c, 'itclub');
   isEqual(['i','t','c','l','u','b'].join(""), processed.join(""));
 }
-// 21
+// 23
 {
   var c = ["it", "club", "schweiz"]; // correct this!
   isEqual(4, c.length);
 }
-// 22
+// 24
 {
   var c = ["it", "club", "schweiz"]; // correct this!
   var processed = c; // correct this! check array functions
   isEqual(c[0], "ABC");
 }
-// 23
+// 25
 {
   var c = ["it", "club", "schweiz"]; // correct this!
   var processed = c; // correct this! check array functions
   isEqual(c.indexOf("club"), 3);
 }
-// 24
+// 26
 {
   var c = ["Ali", "Mustafa", "Mesut", "Mehmet", "Ferdi", "Cihad"]; 
   var processed = c; // correct this! check array functions
   isEqual(processed, "Ali+Mustafa+Mesut+Mehmet+Ferdi+Cihad");
 }
-// 25
+// 27
 {
   var c = ["Ali", "Mustafa", "Mesut", "Mehmet", "Ferdi", "Cihad"]; 
   var processed = c; // correct this! check array functions
