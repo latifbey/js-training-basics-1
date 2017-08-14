@@ -1,2 +1,2 @@
-# js-training
-Javascript Basics for Beginners
+# quickstart-html5
+HTML5 template
