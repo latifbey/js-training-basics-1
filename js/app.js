@@ -58,9 +58,9 @@
 // 06
 {
   var a = "Hallo";
-  var b = "class"
+  var b = "class!"
   var c = "Hallo class!";
-  var processed = a + b;  // correct this!
+  var processed = a +' '+ b;  // correct this!
   
   check(a, "Hallo");
   check(b, "class");
@@ -71,7 +71,7 @@
 {
   var a = "A";
   var c = "AC";
-  var processed = a;  // correct this!
+  var processed = a+"E";  // correct this!
   
   check(a, "A");
   check(c, "AC");
