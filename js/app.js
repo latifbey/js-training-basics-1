@@ -39,7 +39,7 @@
 {
   var a = "Hallo";
   var c = "Hallo class!";
-  var processed = a + "";  // correct this!
+  var processed = a + " class!";  // correct this!
   
   check(c, "Hallo class!");
   check(a, "Hallo");
@@ -49,7 +49,7 @@
 {
   var a = "http://it-club-oberland.ch";
   var c = "You can access our page with (http://it-club-oberland.ch) every time you wish!";
-  var processed = "You can access our page with (" + a;   // correct this!
+  var processed = "You can access our page with (" + a +") every time you wish!";   // correct this!
   
   check(c, "You can access our page with (http://it-club-oberland.ch) every time you wish!");
   check(a, "http://it-club-oberland.ch");
