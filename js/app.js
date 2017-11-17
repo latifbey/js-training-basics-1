@@ -221,13 +221,13 @@
 // 25
 {
   var c = ["it", "club", "schweiz"]; // correct this!
-  var processed = c; // correct this! check array functions
+  var processed = c.unshift('a','b'); // correct this! check array functions
   isEqual(c.indexOf("club"), 3);
 }
 // 26
 {
   var c = ["Ali", "Mustafa", "Mesut", "Mehmet", "Ferdi", "Cihad"]; 
-  var processed = c; // correct this! check array functions
+  var processed = c.join('+'); // correct this! check array functions
   isEqual(processed, "Ali+Mustafa+Mesut+Mehmet+Ferdi+Cihad");
 }
 // 27
