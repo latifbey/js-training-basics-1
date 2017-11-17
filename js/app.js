@@ -103,7 +103,12 @@
 // 10
 {
   var c = "ABABABA";
-    c=c.replace('ABABABA','AB   BA');
+  c=c.split('');
+    c[2]=' ';
+    c[3]=' ';
+    c[4]=' ';
+    c=c.join('');
+    //  c=c.replace('ABABABA','AB   BA');
   // change c, use the arrays' index access
   isEqual(c, "AB   BA");
 }
