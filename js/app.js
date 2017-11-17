@@ -21,7 +21,7 @@
 {
   var a = 5;
   var c = 7;
-  var processed = a + 3;  // correct this!
+  var processed = a + 2;  // correct this!
   
   check(a, 5);
   check(c, 7);
@@ -30,7 +30,7 @@
 // 03
 {
   var a = 5;
-  var processed = a;  // correct this!
+  var processed = a*5;  // correct this!
   
   check(a, 5);
   isEqual(25, processed);
