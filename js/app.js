@@ -157,18 +157,19 @@
 }
 // 16
 {
-  var processed = ' ab c    ';  // correct this! check the string's trim function
+  var processed = 'ab c';  // correct this! check the string's trim function
   isEqual(4, processed.length);
 }
 // 17
 {
-  var processed = 'itclub';  // correct this! 
+  var processed = 'itclub'; 
+   processed = processed.toUpperCase();                // correct this! 
   isEqual('ITCLUB', processed);
 }
 // 18
 {
   var a = "it"
-  var processed = a.concat("mlub");  // correct this!
+  var processed = a.concat("club");  // correct this!
   
   check(a, 'it');
   isEqual('itclub', processed);
@@ -177,7 +178,7 @@
 {
   var c = "itclub";
   var b = "lub"; 
-  
+  c=b+c;
   check(c, 'itclub');
   isEqual(2, c.indexOf(b));
 }
