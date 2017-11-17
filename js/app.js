@@ -115,7 +115,7 @@
 // 11
 {
   var c = "ABC";
-  var processed = String.fromCharCode(65, 67, 67)  // correct this! check ascii table
+  var processed = String.fromCharCode(65, 66, 67)  // correct this! check ascii table
   
   check(c, "ABC");
   isEqual(c, processed);
@@ -124,7 +124,7 @@
 {
   var c = 1;
   var a = "1";
-  var processed = c + a;  // correct this! check js Number Object
+  var processed = c + +a;  // correct this! check js Number Object
   
   check(c, 1);
   check(a, "1");
@@ -132,7 +132,7 @@
 }
 // 13
 {
-  var c = 1;
+  var c = '1';
   var a = 1;
   var processed = c + a;  // correct this!
   
@@ -142,7 +142,7 @@
 }
 // 14
 {
-  var c = 2;
+  var c = '2';
   var a = 2;
   var processed = c + a;  // correct this!
   
@@ -152,7 +152,7 @@
 }
 // 15
 {
-  var processed = '';  // correct this!
+  var processed = '     ';  // correct this!
   isEqual(5, processed.length);
 }
 // 16
