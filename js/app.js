@@ -11,7 +11,7 @@
 
 // 01
 {
-  var a;
+  var a =3;
   var c = 3;
   
   check(c, 3);
