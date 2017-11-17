@@ -177,8 +177,8 @@
 // 19
 {
   var c = "itclub";
-  var b = "lub"; 
-  c=b+c;
+  var b = "club"; 
+  
   check(c, 'itclub');
   isEqual(2, c.indexOf(b));
 }
@@ -186,7 +186,7 @@
 {
   var c = "itclub";
   var b = "lub";
-  var processed = c.substr(2,5); // correct this!
+  var processed = c.substr(3,6); // correct this!
   
   check(c, 'itclub');
   isEqual(processed, b);
