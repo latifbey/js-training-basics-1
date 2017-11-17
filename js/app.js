@@ -82,7 +82,7 @@
   var a = "oo";
   var b = "xo";
   var c = "oxo";
-  var processed = a + b + c; // correct this
+  var processed = "A"+a + b + c+"A"; // correct this
 
   check(a, "oo");
   check(b, "xo");
@@ -93,13 +93,17 @@
 {
   var a = "oooxoo";
   var c = "ooxooo";
-  // change a, use the arrays' index access
+     var a= a.split('');
+      a[2]='x';
+      a[3]='o';
+    a= a.join('');                   // change a, use the arrays' index access
   check(c, "ooxooo");
   isEqual(c, a);
 }
 // 10
 {
   var c = "ABABABA";
+    c=c.replace('ABABABA','AB   BA');
   // change c, use the arrays' index access
   isEqual(c, "AB   BA");
 }
