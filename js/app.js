@@ -233,7 +233,12 @@
 // 27
 {
   var c = ["Ali", "Mustafa", "Mesut", "Mehmet", "Ferdi", "Cihad"]; 
-  var processed = c; // correct this! check array functions
+  var processed = c;
+    c.splice(0,2);
+    c.push('MUSTAFA');
+    c.unshift('Ali');
+   processed = c.join(',');
+    // correct this! check array functions
   isEqual(processed, "Ali,Mesut,Mehmet,Ferdi,Cihad,MUSTAFA");
 }
 
